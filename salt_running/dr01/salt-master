@@ -1,0 +1,114 @@
+atgprod01c2.bcinfra.net:
+    True
+atgprod02c2.bcinfra.net:
+    True
+atgweb03c2.bcinfra.net:
+    True
+oratgdr02.bcinfra.net:
+    True
+atgvarnish02c2.bcinfra.net:
+    True
+hubintegration01.bcinfra.net:
+    True
+zookeeper01c2.bcinfra.net:
+    True
+rodbdr01.bcinfra.net:
+    True
+atgprod03c2.bcinfra.net:
+    True
+atgprod05c2.bcinfra.net:
+    True
+hubdr01.bcinfra.net:
+    True
+solr3c2.bcinfra.net:
+    True
+customeremaildr02.bcinfra.net:
+    True
+zookeeper02c2.bcinfra.net:
+    True
+atgprod04c2.bcinfra.net:
+    True
+varnish01c2.bcinfra.net:
+    True
+atgweb01c2.bcinfra.net:
+    True
+solr4c2.bcinfra.net:
+    True
+rundeck02.bcinfra.net:
+    True
+zookeeper03c2.bcinfra.net:
+    True
+oratgc3h2.bcinfra.net:
+    True
+atgvarnish01c2.bcinfra.net:
+    True
+solr1c2.bcinfra.net:
+    True
+ns04.bcinfra.net:
+    True
+feedsdr02.bcinfra.net:
+    True
+productapi02c2.bcinfra.net:
+    True
+feedsdr03.bcinfra.net:
+    True
+redis02c2.bcinfra.net:
+    True
+atgintegration01-new.bcinfra.net:
+    True
+livedbdr01.bcinfra.net:
+    True
+ccservicedr01.bcinfra.net:
+    True
+productmongodb03c2.bcinfra.net:
+    True
+collectiontoolsint01.bcinfra.net:
+    True
+ns05.bcinfra.net:
+    True
+feedsintegration01.bcinfra.net:
+    True
+customeremailintegration01.bcinfra.net:
+    True
+syslog-06.bcinfra.net:
+    True
+flashwebint01.bcinfra.net:
+    True
+flashint01.bcinfra.net:
+    True
+atgweb02c2.bcinfra.net:
+    True
+collectionapiint01.bcinfra.net:
+    True
+redis01c2.bcinfra.net:
+    True
+feedsdr01.bcinfra.net:
+    True
+customeremaildr01.bcinfra.net:
+    True
+productapi01c2.bcinfra.net:
+    True
+solr2c2.bcinfra.net:
+    True
+atgintegration01.bcinfra.net:
+    True
+flashsocketint01.bcinfra.net:
+    True
+varnish02c2.bcinfra.net:
+    True
+hubdr02.bcinfra.net:
+    True
+syslog-05.bcinfra.net:
+    True
+oratgc3h1.bcinfra.net:
+    True
+productmongodb01c2.bcinfra.net:
+    True
+hubdr03.bcinfra.net:
+    True
+productmongodb02c2.bcinfra.net:
+    True
+oratgdr01.bcinfra.net:
+    True
+content-tools-int01.bcinfra.net:
+    True

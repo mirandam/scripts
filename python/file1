@@ -1,0 +1,24 @@
+define service {
+	service_description                     Load Balancer CommunityNotifications_Pool Status
+	use                                     generic-service-24x7-Critical
+	host_name                               blb1.vwdl,blb2.vwdl
+	check_command                           check_lb_pool_status!CommunityNotifications_Pool
+	contacts                                community,Mission-Critical-Nagios,pagerduty-community
+	parallelize_check                       1
+	notes                                   Please contact community Team by phone
+	servicegroups                           community
+}
+
+
+define service {
+	service_description                     Load Balancer CommunityNeo4j_Pool Status
+	use                                     generic-service-24x7-Critical
+	host_name                               blb1.vwdl,blb2.vwdl
+	check_command                           check_lb_pool_status!CommunityNeo4j_Pool
+	contacts                                community,Mission-Critical-Nagios,pagerduty-community
+	parallelize_check                       1
+	notes                                   Please contact Community Team by phone
+	servicegroups                           community
+	notification_period                     CommunityNeo4j_Pool_notification
+}
+

@@ -1,0 +1,192 @@
+atgweb4.pp.bcinfra.net:
+    True
+albert.pp.bcinfra.net:
+    True
+pacificmanagersession01.bcinfra.net:
+    True
+atgweb1.pp.bcinfra.net:
+    True
+hubstats02.vwdl.bcinfra.net:
+    True
+rootdb03.bcinfra.net:
+    True
+managercvdc02.bcinfra.net:
+    True
+managercvdc01.bcinfra.net:
+    True
+oratgc1h2.pp.bcinfra.net:
+    True
+bikesnosql01.bcinfra.net:
+    True
+pacificmanager01.bcinfra.net:
+    True
+memcached-01.pp.bcinfra.net:
+    True
+rootdb02.bcinfra.net:
+    True
+finch.pp.bcinfra.net:
+    True
+memcached-05.pp.bcinfra.net:
+    True
+oratgc1h1.pp.bcinfra.net:
+    True
+oratgc2h2.bcinfra.net:
+    True
+buildslave-01.pp.bcinfra.net:
+    True
+reports.pp.bcinfra.net:
+    True
+chad.pp.bcinfra.net:
+    True
+lwes-01.pp.bcinfra.net:
+    True
+grays.pp.bcinfra.net:
+    True
+atgweb3.pp.bcinfra.net:
+    True
+atgbcc01.bcinfra.net:
+    True
+etl01.vwdl.bcinfra.net:
+    True
+pacificmanagersession02.bcinfra.net:
+    True
+alfresco01.bcinfra.net:
+    True
+trufit01.bcinfra.net:
+    True
+memcached-04.pp.bcinfra.net:
+    True
+owen.pp.bcinfra.net:
+    True
+memcached-02.pp.bcinfra.net:
+    True
+erie.pp.bcinfra.net:
+    True
+webapp15.pp.bcinfra.net:
+    True
+hubstats01.vwdl.bcinfra.net:
+    True
+bryce.pp.bcinfra.net:
+    True
+carson.pp.bcinfra.net:
+    True
+slcmanagersession02.bcinfra.net:
+    True
+arcadia.pp.bcinfra.net:
+    True
+arches.pp.bcinfra.net:
+    True
+fulfillment02.pp.bcinfra.net:
+    True
+sitescraper.bcinfra.net:
+    True
+wilson.pp.bcinfra.net:
+    True
+atgweb5.pp.bcinfra.net:
+    True
+atgweb2.pp.bcinfra.net:
+    True
+congo.pp.bcinfra.net:
+    True
+longs.pp.bcinfra.net:
+    True
+sonar01.bcinfra.net:
+    True
+bigbend.pp.bcinfra.net:
+    True
+sessiondb01.bcinfra.net:
+    True
+sanzu.pp.bcinfra.net:
+    True
+glacier.pp.bcinfra.net:
+    True
+pacificsessionmaster.bcinfra.net:
+    True
+lhotse.pp.bcinfra.net:
+    True
+obiprod01.vwdl.bcinfra.net:
+    True
+webapp16.pp.bcinfra.net:
+    True
+evans.pp.bcinfra.net:
+    True
+slcmanagersession01.bcinfra.net:
+    True
+maroon.pp.bcinfra.net:
+    True
+reindeer.pp.bcinfra.net:
+    True
+aklogs.vwdl.bcinfra.net:
+    True
+rss-02.pp.bcinfra.net:
+    True
+hadoop02.bcinfra.net:
+    True
+appdyndb01.bcinfra.net:
+    True
+carlsbad.pp.bcinfra.net:
+    True
+sessiondb03.bcinfra.net:
+    True
+slcsessionmaster.bcinfra.net:
+    True
+massive.pp.bcinfra.net:
+    True
+rss-03.pp.bcinfra.net:
+    True
+syslog-02.vwdl.bcinfra.net:
+    True
+lincoln.pp.bcinfra.net:
+    True
+badlands.pp.bcinfra.net:
+    True
+torreys.pp.bcinfra.net:
+    True
+mns01.vwdl.bcinfra.net:
+    True
+harvard.pp.bcinfra.net:
+    True
+pacificmanager02.bcinfra.net:
+    True
+atgicauth02.bcinfra.net:
+    True
+customeremail02.bcinfra.net:
+    True
+cameron.pp.bcinfra.net:
+    True
+sessiondb02.bcinfra.net:
+    True
+obiprod02.bcinfra.net:
+    True
+rootdb01.bcinfra.net:
+    True
+atgicauth01.bcinfra.net:
+    True
+oredw1.pp.bcinfra.net:
+    True
+memcached-03.pp.bcinfra.net:
+    True
+oratgc2h1.bcinfra.net:
+    True
+logan.pp.bcinfra.net:
+    True
+customeremail03.bcinfra.net:
+    True
+rss-01.pp.bcinfra.net:
+    True
+crater.pp.bcinfra.net:
+    True
+webperformance01.bcinfra.net:
+    True
+graphite.bcinfra.net:
+    True
+atgcsrweb01.bcinfra.net:
+    True
+damproxy02.bcinfra.net:
+    True
+dameast02.bcinfra.net:
+    True
+dameast01.bcinfra.net:
+    True
+damproxy01.bcinfra.net:
+    True

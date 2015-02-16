@@ -1,0 +1,86 @@
+#!/bin/bash
+
+# Created by Manuel Miranda
+
+clear
+echo -e "\n\tWelcome to Disk Usage reporting and LVM automation\n\n"
+
+echo -e "-------------------------------------------------------------------------\n"
+echo -e "1) Checking file systems usage\n"
+
+echo -e "Please type the treshold: $TH"
+read -e TH
+#TH=90
+echo -e "The current treshold is $TH"
+ARRAY=()
+FS_COUNT=0
+while read output
+do
+        USAGE=`echo $output | awk '{print $5}'`
+	FS=`echo $output | awk '{print $1}'`
+        echo -e "\nChecking: "$FS
+	if [ -z "${output##*"/dev/mapper"*}" ]; then
+		LVM='Yes'
+	else
+		LVM='NO'
+	fi
+	echo "LVM: $LVM"
+        
+	if [ $USAGE -ge $TH ]; then
+		STATUS="\e[31;5mWARNING\e[0m"
+		if [ $LVM = "Yes" ] ; then
+			ARRAY[$FS_COUNT]=`echo $FS | grep "/dev/mapper"`
+			FS_COUNT=$[FS_COUNT +1]
+		fi
+        else
+		STATUS="OK"
+        fi
+	echo -e "Status: $STATUS"
+	echo -e "Usage: $USAGE%"
+#sleep 1
+done < <( df -h | sed 1d | sed 's/%//g' )
+
+if [ -z ${ARRAY[@]} ];then
+	echo -e "\n\n\t\tAll file systems are OK\n"
+	exit
+fi 
+#####	2) Identify if you have space in the VG    ################
+echo -e "\n-------------------------------------------------------------------------\n"
+echo -e "2) Identifying if is there space in the VG\n"
+#echo -e "\n\n" ${ARRAY[@]} 
+for  array in "${ARRAY[@]}"
+do
+	echo -e "Serching VG for: "$array
+	VG=`echo $array | sed 's/\/dev\/mapper\///g' | cut -f 1 -d '-'`
+	FREE=`vgdisplay $VG | grep "Free  PE / Size" | awk '{ print $7" "$8 }'`
+
+	FULL_DF=`df -m | grep $array`
+
+	USAGE=`echo $FULL_DF | awk '{ print $3}'`
+	TOTAL_ACC=`echo $FULL_DF | awk '{ print $2}'`
+
+	let PERCENT_DESIRED=$TH-5
+	#por=`echo "scale=2;100/$PERCENT_DESIRED" | bc`
+	#TOTAL_DESIRED=`echo "scale=0;$USAGE/$por" | bc`
+	let TOTAL_DESIRED=($USAGE*100)/$PERCENT_DESIRED
+
+	INCR=`echo "scale=0;$TOTAL_DESIRED-$TOTAL_ACC" | bc` 
+	echo -e "VG Name: $VG"
+	echo -e "Free on VG: $FREE"
+	echo -e "Current usage: $USAGE MB"
+	echo -e "Current total: $TOTAL_ACC MB"
+	echo -e "Desired percentage of Usage: $PERCENT_DESIRED%"
+	echo -e "Total desired: $TOTAL_DESIRED MB"
+	echo -e "Total to increment: $INCR"
+	echo -e "\nWould you like to incement this logical volume?\nType yes for apply changes or anything to continue"
+	read -e op
+	if [ -z $op ];then op="no"; fi
+	if [ $op = "yes" ];then
+		echo -e "Incrementing...\n"
+		`echo lvextend -L +$INCR"M" $array`
+		`echo resize2fs $array`
+	else
+		echo -e "Nothing has changed\n"
+	fi
+	echo -e "-----------------------\n"
+done

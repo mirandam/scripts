@@ -1,0 +1,30 @@
+define host {
+        host_name               livedbdr01.bcinfra.net
+        alias                   livedbdr01.bcinfra.net
+        address                 10.43.60.109
+        use                             New-Linux-24x7-Critical
+}
+define host {
+        host_name               alfresco01
+        alias                   alfresco01
+        address                 10.42.60.234
+        use                     New-Linux-24x7-Critical
+}
+define host {
+        host_name               alfresco_vip
+        alias                   alfresco_vip
+        address                 10.42.6.126
+        use                     New-Linux-24x7-Critical
+}
+define host {
+        host_name               anole
+        alias                   anole
+        address                 10.42.60.130
+        use                     New-Linux-24x7-Critical
+}
+#define host {
+#	host_name		DNS-tcp_virtual_server
+#	alias			DNS-tcp_virtual_server
+#	address			10.42.6.15
+#	use				New-Linux-24x7-Critical
+#}
